@@ -1,0 +1,172 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Page-1" id="wHgWofx572LqfuTLzsqb">
+    <mxGraphModel dx="834" dy="1601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-1" value="Movie" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="60" width="360" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-2" value="MovieId INT PRIMARY KEY IDENTITY" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-1">
+          <mxGeometry y="30" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-3" value="MovieTitle NVARCHAR(255) NOT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-1">
+          <mxGeometry y="60" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-4" value="MovieOverview NVARCHAR(MAX)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-1">
+          <mxGeometry y="90" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-5" value="MovieReleaseDate DATE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-1">
+          <mxGeometry y="120" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-6" value="MoviePosterPath NVARCHAR(MAX)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-1">
+          <mxGeometry y="150" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-7" value="MovieBackdropPath NVARCHAR(MAX)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-1">
+          <mxGeometry y="180" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-8" value="MoviePopularity FLOAT" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-1">
+          <mxGeometry y="210" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-9" value="MovieVoteAverage FLOAT" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-1">
+          <mxGeometry y="240" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-10" value="MovieVoteCount INT" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-1">
+          <mxGeometry y="270" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-11" value="MovieGenre" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="-300" width="680" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-12" value="MG_MovieIdRef INT" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-11">
+          <mxGeometry y="30" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-13" value="MG_GenreIdRef INT&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-11">
+          <mxGeometry y="60" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-14" value="PRIMARY KEY(MG_MovieIdRef, MG_GenreIdRef)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-11">
+          <mxGeometry y="90" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-15" value="CONSTRAINT FK_MG_Movie FOREIGN KEY (MG_MovieIdRef) REFERENCES Movie(MovieId) ON DELETE CASCADE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-11">
+          <mxGeometry y="120" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-16" value="CONSTRAINT FK_MG_Genre FOREIGN KEY (MG_GenreIdRef) REFERENCES Genre(GenreId) ON DELETE CASCADE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-11">
+          <mxGeometry y="150" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-17" value="Genre" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="-60" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-18" value="GenreId INT PRIMARY KEY IDENTITY" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-17">
+          <mxGeometry y="30" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-19" value="GenreName NVARCHAR(100) NOT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-17">
+          <mxGeometry y="60" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-21" value="Actor" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="-290" width="360" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-22" value="ActorId INT PRIMARY KEY IDENTITY" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-21">
+          <mxGeometry y="30" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-23" value="ActorName NVARCHAR(100) NOT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-21">
+          <mxGeometry y="60" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-24" value="ActorBio NVARCHAR(MAX)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-21">
+          <mxGeometry y="90" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-26" value="ActorProfilePath NVARCHAR(255)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-21">
+          <mxGeometry y="120" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-27" value="ActorWiki NVARCHAR(MAX)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-21">
+          <mxGeometry y="150" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-28" value="MovieActor" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="640" width="680" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-29" value="MA_MovieIdRef INT" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-28">
+          <mxGeometry y="30" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-30" value="MA_ActorIdRef INT" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-28">
+          <mxGeometry y="60" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-31" value="PRIMARY KEY(MA_MovieIdRef, MA_ActorIdRef)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-28">
+          <mxGeometry y="90" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-32" value="CONSTRAINT FK_MA_Movie FOREIGN KEY (MA_MovieIdRef) REFERENCES Movie(MovieId) ON DELETE CASCADE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-28">
+          <mxGeometry y="120" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-33" value="CONSTRAINT FK_MA_Actor FOREIGN KEY (MA_ActorIdRef) REFERENCES Actor(ActorId) ON DELETE CASCADE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-28">
+          <mxGeometry y="150" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-34" value="Review" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="850" width="720" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-35" value="ReviewId INT PRIMARY KEY IDENTITY" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-34">
+          <mxGeometry y="30" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-36" value="ReviewText NVARCHAR(MAX)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-34">
+          <mxGeometry y="60" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-37" value="ReviewCreatedAt DATETIME DEFAULT GETDATE()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-34">
+          <mxGeometry y="90" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-38" value="Review_UserIdRef NVARCHAR(450)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-34">
+          <mxGeometry y="120" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-39" value="Review_MovieIdRef INT" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-34">
+          <mxGeometry y="150" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-40" value="Review_ParentReviewIdRef INT NULL" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-34">
+          <mxGeometry y="180" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-41" value="CONSTRAINT FK_Review_User FOREIGN KEY (Review_UserIdRef) REFERENCES AspNetUsers(Id) ON DELETE CASCADE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-34">
+          <mxGeometry y="210" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-42" value="CONSTRAINT FK_Review_Movie FOREIGN KEY (Review_MovieIdRef) REFERENCES Movie(MovieId) ON DELETE CASCADE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-34">
+          <mxGeometry y="240" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-43" value="CONSTRAINT FK_Review_Parent FOREIGN KEY (Review_ParentReviewIdRef) REFERENCES Review(ReviewId)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-34">
+          <mxGeometry y="270" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-44" value="Rating" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="1370" width="720" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-46" value="Rating_UserIdRef INT" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-44">
+          <mxGeometry y="30" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-45" value="Rating_MovieIdRef INT&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-44">
+          <mxGeometry y="60" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-48" value="RatingValue INT CHECK (RatingValue BETWEEN 1 AND 10)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-44">
+          <mxGeometry y="90" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-47" value="PRIMARY KEY(Rating_MovieIdRef, Rating_UserIdRef)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-44">
+          <mxGeometry y="120" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-49" value="CONSTRAINT FK_Rating_User FOREIGN KEY (Rating_UserIdRef) REFERENCES AspNetUsers(Id) ON DELETE CASCADE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-44">
+          <mxGeometry y="150" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-50" value="CONSTRAINT FK_Rating_Movie FOREIGN KEY (Rating_MovieIdRef) REFERENCES Movie(MovieId) ON DELETE CASCADE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-44">
+          <mxGeometry y="180" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-51" value="Watchlist" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="1160" width="720" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-52" value="Watchlist_UserIdRef NVARCHAR(450)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-51">
+          <mxGeometry y="30" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-53" value="Watchlist_MovieIdRef INT" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-51">
+          <mxGeometry y="60" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-54" value="PRIMARY KEY(Watchlist_UserIdRef, Watchlist_MovieIdRef)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-51">
+          <mxGeometry y="90" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-55" value="CONSTRAINT FK_Watchlist_User FOREIGN KEY (Watchlist_UserIdRef) REFERENCES AspNetUsers(Id) ON DELETE CASCADE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-51">
+          <mxGeometry y="120" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hxb6yPYEF0XtUn7NOOVX-56" value="CONSTRAINT FK_Watchlist_Movie FOREIGN KEY (Watchlist_MovieIdRef) REFERENCES Movie(MovieId) ON DELETE CASCADE" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="Hxb6yPYEF0XtUn7NOOVX-51">
+          <mxGeometry y="150" width="720" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
