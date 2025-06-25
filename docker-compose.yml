@@ -25,6 +25,17 @@ services:
     ports:
       - "5000:5000"
 
+  myflixweb:
+    build:
+      context: apps/web
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    depends_on:
+      - myflixapi
+      
   sqltools:
     image: mcr.microsoft.com/mssql-tools
     container_name: sqltools
