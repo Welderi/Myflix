@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MyflixAPI.Models;
+using MyflixAPI.Services;
+using MyflixAPI.TmdbServices;
+using TMDbLib.Client;
 
 namespace MyflixAPI
 {
@@ -10,17 +13,49 @@ namespace MyflixAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.WebHost.ConfigureKestrel(serverOptions =>
+            {
+                serverOptions.ListenAnyIP(5000);
+            });
+
+            builder.Configuration
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
+                .AddEnvironmentVariables();
+
             builder.Services.AddDbContext<MyflixContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<MyflixContext>()
                 .AddDefaultTokenProviders();
 
             builder.Services.AddControllers();
 
+            builder.Services.AddScoped<TmdbService>();
+            builder.Services.AddScoped<ActorService>();
+            builder.Services.AddScoped<GenreService>();
+            builder.Services.AddScoped<MovieService>();
+            builder.Services.AddScoped<RatingService>();
+            builder.Services.AddScoped<ReviewService>();
+            builder.Services.AddScoped<UserService>();
+            builder.Services.AddScoped<WatchlistService>();
+
+
+            string tmdbApiKey = builder.Configuration["TMDb:ApiKey"]!;
+
+            builder.Services.AddSingleton(provider =>
+            {
+                var client = new TMDbClient(tmdbApiKey);
+                return client;
+            });
+
             var app = builder.Build();
 
+            app.UseRouting();
+
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllers();

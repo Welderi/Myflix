@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace MyflixAPI.Models;
+﻿namespace MyflixAPI.Models;
 
 public partial class Movie
 {

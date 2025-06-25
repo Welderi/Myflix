@@ -6,6 +6,7 @@ namespace MyflixAPI.Controllers
     [Route("api/[controller]")]
     public class MyflixController : ControllerBase
     {
+        [HttpGet]
         public IActionResult Index()
         {
             return Ok("hello");

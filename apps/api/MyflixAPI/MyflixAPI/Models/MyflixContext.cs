@@ -28,7 +28,12 @@ public partial class MyflixContext : IdentityDbContext<ApplicationUser>
     public virtual DbSet<Watchlist> Watchlists { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS06;Database=Myflix;Trusted_Connection=True;Encrypt=False");
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+            optionsBuilder.UseSqlServer("your fallback connection if needed");
+        }
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -1,3 +1,4 @@
+
 USE Myflix;
 
 CREATE TABLE [Movie]
@@ -77,3 +78,5 @@ CREATE TABLE [Rating]
 	CONSTRAINT FK_Rating_User FOREIGN KEY (Rating_UserIdRef) REFERENCES AspNetUsers(Id) ON DELETE CASCADE,
 	CONSTRAINT FK_Rating_Movie FOREIGN KEY (Rating_MovieIdRef) REFERENCES Movie(MovieId) ON DELETE CASCADE
 );
+
+RESTORE FILELISTONLY FROM DISK = 'C:\Users\lizak\source\repos\myflix\apps\sql-server\Myflix.bak'
