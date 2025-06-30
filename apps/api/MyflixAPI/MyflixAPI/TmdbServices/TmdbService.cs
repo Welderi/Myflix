@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MyflixAPI.Models;
+using System.Text.Json;
 using TMDbLib.Client;
 
 namespace MyflixAPI.TmdbServices
@@ -68,7 +69,7 @@ namespace MyflixAPI.TmdbServices
                 {
                     ActorName = ac.Name,
                     ActorBio = ac.KnownFor?.ToString(),
-                    ActorProfilePath = ac.ProfilePath,
+                    ActorProfilePath = JsonSerializer.Serialize(ac.KnownFor),
                     ActorWiki = "https://en.wikipedia.org/wiki/" + Uri.EscapeDataString(ac.Name.Replace(' ', '_'))
                 };
                 _context.Actors.Add(actor);

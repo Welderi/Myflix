@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace MyflixAPI.Models;
+﻿namespace MyflixAPI.Models;
 
 public partial class Actor
 {
@@ -16,4 +13,6 @@ public partial class Actor
     public string? ActorWiki { get; set; }
 
     public virtual ICollection<Movie> MaMovieIdRefs { get; set; } = new List<Movie>();
+
+    //public virtual ICollection<ActorTranslation> ActorTranslations { get; set; } = new List<ActorTranslation>();
 }

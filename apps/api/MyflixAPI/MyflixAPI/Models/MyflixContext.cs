@@ -27,6 +27,12 @@ public partial class MyflixContext : IdentityDbContext<ApplicationUser>
 
     public virtual DbSet<Watchlist> Watchlists { get; set; }
 
+    public virtual DbSet<ActorTranslation> ActorTranslations { get; set; }
+
+    public virtual DbSet<MovieTranslation> MovieTranslations { get; set; }
+
+    public virtual DbSet<GenreTranslation> GenreTranslations { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
@@ -176,6 +182,57 @@ public partial class MyflixContext : IdentityDbContext<ApplicationUser>
                   .WithMany()
                   .HasForeignKey(e => e.WatchlistUserIdRef)
                   .HasConstraintName("FK_Watchlist_User");
+        });
+
+        modelBuilder.Entity<MovieTranslation>(entity =>
+        {
+            entity.HasKey(e => new { e.MtMovieIdRef });
+
+            entity.Property(e => e.MtLanguage)
+                .HasMaxLength(10)
+                .HasColumnName("MT_Language");
+            entity.Property(e => e.MtMovieIdRef).HasColumnName("MT_MovieIdRef");
+            entity.Property(e => e.MtOverview).HasColumnName("MT_Overview");
+            entity.Property(e => e.MtTitle)
+                .HasMaxLength(255)
+                .HasColumnName("MT_Title");
+
+            entity.HasOne(d => d.MTMovieIdRefNavigation).WithMany()
+                .HasForeignKey(d => d.MtMovieIdRef)
+                .HasConstraintName("FK_MT_Movie");
+        });
+
+        modelBuilder.Entity<ActorTranslation>(entity =>
+        {
+            entity.HasKey(e => new { e.AtActorIdRef, e.AtLanguage });
+
+            entity.Property(e => e.AtActorIdRef).HasColumnName("AT_ActorIdRef");
+            entity.Property(e => e.AtBio).HasColumnName("AT_Bio");
+            entity.Property(e => e.AtLanguage)
+                .HasMaxLength(10)
+                .HasColumnName("AT_Language");
+            entity.Property(e => e.AtName)
+                .HasMaxLength(100)
+                .HasColumnName("AT_Name");
+            entity.Property(e => e.AtWiki).HasColumnName("AT_Wiki");
+
+            entity.HasOne(d => d.ATActorIdRefNavigation).WithMany()
+                .HasForeignKey(d => d.AtActorIdRef)
+                .HasConstraintName("FK_AT_Actor");
+        });
+
+        modelBuilder.Entity<GenreTranslation>(entity =>
+        {
+            entity.HasKey(e => new { e.GtGenreIdRef });
+
+            entity.Property(e => e.GtGenreIdRef).HasColumnName("GT_GenreIdRef");
+            entity.Property(e => e.GtName)
+                .HasMaxLength(100)
+                .HasColumnName("GT_Name");
+
+            entity.HasOne(d => d.GtGenreIdRefNavigation).WithMany()
+                .HasForeignKey(d => d.GtGenreIdRef)
+                .HasConstraintName("FK_GT_Genre");
         });
 
         OnModelCreatingPartial(modelBuilder);

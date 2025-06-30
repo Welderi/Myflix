@@ -39,7 +39,9 @@ namespace MyflixAPI.Services
 
         public async Task<ActionResult> Login(LoginDTO model)
         {
-            var user = await _userManager.FindByNameAsync(model.UserName);
+            var user = await _userManager.FindByNameAsync(model.UserNameEmail)
+               ?? await _userManager.FindByEmailAsync(model.UserNameEmail);
+
             if (user == null)
                 return new BadRequestObjectResult("User does not exist");
 

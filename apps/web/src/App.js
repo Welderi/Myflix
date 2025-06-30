@@ -1,24 +1,22 @@
 import './App.css';
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+import Login from "./components/login/login";
+import Register from "./components/register/register";
+import Main from "./components/main/main";
+import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom";
 
 function App() {
-  const [data, setData] = useState('');
-
-  useEffect(() => {
-    fetch("http://localhost:5000/api/tmdb")
-        .then(res => res.text())
-        .then(data => {
-          console.log(data);
-          setData(data);
-        })
-        .catch(err => console.error(err));
-  }, []);
-
   return (
-      <div className="App">
-        <h1>API:</h1>
-        <pre>{data}</pre>
-      </div>
+      <Router>
+          <div className="App">
+              <Routes>
+                  <Route path="/" element={<Main />} />
+                  <Route path="/login" element={<Login />} />
+                  <Route path="/register" element={<Register />} />
+                  <Route path="*" element={<Navigate to="/" replace />} />
+              </Routes>
+          </div>
+      </Router>
   );
 }
 

@@ -24,6 +24,8 @@ public partial class Movie
 
     public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
 
+    //public virtual ICollection<MovieTranslation> MovieTranslations { get; set; } = new List<MovieTranslation>();
+
     public virtual ICollection<Watchlist> Watchlists { get; set; } = new List<Watchlist>();
 
     public virtual ICollection<Actor> MaActorIdRefs { get; set; } = new List<Actor>();

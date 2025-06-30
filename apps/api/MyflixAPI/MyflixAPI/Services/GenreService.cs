@@ -37,6 +37,12 @@ namespace MyflixAPI.Services
             return new OkResult();
         }
 
+        public async Task<List<Genre>> SearchGenreByNameAsync(string name)
+        {
+            return await _context.Genres
+                .Where(m => m.GenreName == name).ToListAsync();
+        }
+
         public async Task<List<Genre>> GetAllGenresAsync()
         {
             return await _context.Genres.ToListAsync();

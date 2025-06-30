@@ -79,4 +79,31 @@ CREATE TABLE [Rating]
 	CONSTRAINT FK_Rating_Movie FOREIGN KEY (Rating_MovieIdRef) REFERENCES Movie(MovieId) ON DELETE CASCADE
 );
 
+CREATE TABLE [MovieTranslation]
+(
+	MT_MovieIdRef INT,
+	MT_Language NVARCHAR(10),
+	MT_Title NVARCHAR(255),
+	MT_Overview NVARCHAR(MAX),
+	CONSTRAINT FK_MT_Movie FOREIGN KEY (MT_MovieIdRef) REFERENCES Movie(MovieId)
+);
+
+CREATE TABLE [ActorTranslation]
+(
+	AT_ActorIdRef INT,
+	AT_Language NVARCHAR(10),
+	AT_Name NVARCHAR(100),
+	AT_Bio NVARCHAR(MAX),
+	AT_Wiki NVARCHAR(MAX),
+	CONSTRAINT FK_AT_Actor FOREIGN KEY (AT_ActorIdRef) REFERENCES Actor(ActorId)
+);
+
+CREATE TABLE [GenreTranslation]
+(
+	GT_GenreIdRef INT,
+	GT_Name NVARCHAR(100),
+	CONSTRAINT FK_GT_Genre FOREIGN KEY (GT_GenreIdRef) REFERENCES Genre(GenreId)
+);
+
+
 RESTORE FILELISTONLY FROM DISK = 'C:\Users\lizak\source\repos\myflix\apps\sql-server\Myflix.bak'

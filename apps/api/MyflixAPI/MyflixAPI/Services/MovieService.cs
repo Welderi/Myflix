@@ -42,10 +42,10 @@ namespace MyflixAPI.Services
             return await _context.Movies.FindAsync(id);
         }
 
-        public async Task<Movie?> SearchMovieByNameAsync(string name)
+        public async Task<List<Movie>> SearchMovieByNameAsync(string name)
         {
             return await _context.Movies
-                .FirstOrDefaultAsync(m => m.MovieTitle == name);
+                .Where(m => m.MovieTitle == name).ToListAsync();
         }
 
         public async Task<List<Movie>> GetAllMoviesAsync()

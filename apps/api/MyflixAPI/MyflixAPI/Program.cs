@@ -18,6 +18,10 @@ namespace MyflixAPI
                 serverOptions.ListenAnyIP(5000);
             });
 
+            builder.Services.AddHttpClient();
+
+            builder.Services.AddHttpClient<AzureTranslatorService>();
+
             builder.Configuration
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
@@ -44,6 +48,10 @@ namespace MyflixAPI
             builder.Services.AddControllers();
 
             builder.Services.AddScoped<TmdbService>();
+            builder.Services.AddScoped<MovieTranslationService>();
+            builder.Services.AddScoped<ActorTranslationService>();
+            builder.Services.AddScoped<GenreTranslationService>();
+            builder.Services.AddScoped<MAGTranslationService>();
             builder.Services.AddScoped<ActorService>();
             builder.Services.AddScoped<GenreService>();
             builder.Services.AddScoped<MovieService>();

@@ -2,37 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43243d05-599d-42c4-9bd7-2bd88c4458a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/.dockerignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Controllers/MyflixController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Controllers/MyflixController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/login/login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/login/login.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main/main.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/register/register.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/register/register.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/languages/en/translation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/languages/ua/translation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/translations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/DTOs/LoginDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/DTOs/LoginDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Models/Actor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Models/Actor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Models/Movie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Models/Movie.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Models/MyflixContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Models/MyflixContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/MyflixAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/MyflixAPI.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Services/GenreService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Services/GenreService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Services/MovieService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Services/MovieService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Services/UserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sql-server/Myflix.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../sql-server/Myflix.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sql-server/Myflix.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../sql-server/Myflix.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sql-server/SQLQueryMyflix.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../sql-server/SQLQueryMyflix.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,19 +46,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/lizak/source/repos/myflix/apps/web",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lizak/WebstormProjects/in-shop&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -89,7 +83,10 @@
       <option name="presentableId" value="Default" />
       <updated>1750846251431</updated>
       <workItem from="1750846252620" duration="148000" />
-      <workItem from="1750846410637" duration="2552000" />
+      <workItem from="1750846410637" duration="6445000" />
+      <workItem from="1750857318123" duration="6128000" />
+      <workItem from="1751008573139" duration="592000" />
+      <workItem from="1751025829872" duration="17000" />
     </task>
     <servers />
   </component>
