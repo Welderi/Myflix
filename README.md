@@ -31,5 +31,5 @@ It uses TMDb API for movie data, SQL Server for storage, and ASP.NET Core Identi
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/myflix.git
+git clone https://github.com/Welderi/Myflix.git
 cd myflix
