@@ -13,9 +13,9 @@ namespace MyflixAPI.TmdbServices
         public AzureTranslatorService(HttpClient httpClient, IConfiguration config)
         {
             _httpClient = httpClient;
-            _key = config["AzureTranslator:Key"];
-            _endpoint = config["AzureTranslator:Endpoint"];
-            _region = config["AzureTranslator:Region"];
+            _key = config["AzureTranslator:Key"]!;
+            _endpoint = config["AzureTranslator:Endpoint"]!;
+            _region = config["AzureTranslator:Region"]!;
         }
 
         public async Task<string?> TranslateTextAsync(string text, string from = "en", string to = "uk")

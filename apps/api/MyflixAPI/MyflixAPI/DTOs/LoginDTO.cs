@@ -4,7 +4,7 @@ namespace MyflixAPI.DTOs
 {
     public class LoginDTO
     {
-        [Required(ErrorMessage = "Username is required")]
+        [Required(ErrorMessage = "Username or email is required")]
         public string UserNameEmail { get; set; }
 
         [Required(ErrorMessage = "Password is required")]

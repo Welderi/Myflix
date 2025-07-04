@@ -2,32 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43243d05-599d-42c4-9bd7-2bd88c4458a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/login/login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/login.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/main.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/main/main.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/register/register.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/register/register.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/languages/en/translation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/languages/ua/translation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/translations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/changePassword/changePassword.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/changePassword/changePassword.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/mainMovies/mainMovies.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/mainMovies/mainMovies.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Controllers/DbControllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Controllers/DbControllers/UserController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/DTOs/LoginDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/DTOs/LoginDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Models/Actor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Models/Actor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Models/Movie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Models/Movie.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Models/MyflixContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Models/MyflixContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Services/GenreService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Services/GenreService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Services/MovieService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Services/MovieService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/Services/UserService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sql-server/Myflix.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../sql-server/Myflix.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sql-server/Myflix.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../sql-server/Myflix.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sql-server/SQLQueryMyflix.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../sql-server/SQLQueryMyflix.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/TmdbServices/AzureTranslatorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/MyflixAPI/MyflixAPI/TmdbServices/AzureTranslatorService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movieBlock/movieBlock.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movieBlock/movieBlock.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +75,7 @@
       <workItem from="1750857318123" duration="6128000" />
       <workItem from="1751008573139" duration="592000" />
       <workItem from="1751025829872" duration="17000" />
+      <workItem from="1751277958808" duration="17027000" />
     </task>
     <servers />
   </component>

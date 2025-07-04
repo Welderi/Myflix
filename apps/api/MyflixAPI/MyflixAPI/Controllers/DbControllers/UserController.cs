@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MyflixAPI.DTOs;
 using MyflixAPI.Services;
 
@@ -31,6 +32,16 @@ namespace MyflixAPI.Controllers.DbControllers
                 return BadRequest(ModelState);
 
             return await _service.Login(model);
+        }
+
+        [Authorize]
+        [HttpPost("changepassword")]
+        public async Task<ActionResult> ChangePassword([FromBody] ChangePasswordDTO model)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            return await _service.ChangePassword(model);
         }
     }
 }

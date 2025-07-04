@@ -15,7 +15,9 @@ function Main() {
         <div>
             <nav>
                 <Link to="/login">{t("login")}</Link> |{" "}
-                <Link to="/register">{t("register")}</Link>
+                <Link to="/register">{t("register")}</Link> |{" "}
+                <Link to="/mainMovies">Main Movie</Link> |{" "}
+                <Link to="/changePassword">Change Password</Link>
             </nav>
 
             <button onClick={() => changeLang(currentLanguage === "ua" ? "en" : "ua")}>
